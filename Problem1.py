@@ -1,17 +1,10 @@
 import numpy as np
 import scipy.stats
 
-print("X | ", end='')
-for i in range(6):
-    if i != 5:
-        print(i, "| ", end='')
-    else:
-        print(i, end='')
 
-print()
-print('P | ', end='')
-rv = hy
+print('X | P')
+rv = scipy.stats.hypergeom(16, 11, 5)
 for i in range(6):
-    print(scipy.stats.hypergeom.pmf()
+    print(i, '|', rv.pmf(i))
 
 # scipy.stats.hypergeom.pmf
