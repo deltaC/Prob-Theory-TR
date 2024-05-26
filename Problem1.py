@@ -10,4 +10,3 @@ for i in range(6):
 print('-----------------------')
 print('MX =', rv.mean())
 print('DX =', rv.var())
-# scipy.stats.hypergeom.pmf
